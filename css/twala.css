@@ -67,3 +67,80 @@ span.tooltip:hover:before {
 	display: block;
 	margin-top: 6px; 
 }
+
+/**CEE-EDITS**/
+.profile img {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.profile img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.intro-content .h1-aicee {
+    border-bottom: 2px solid #3b3b3b;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px;
+}
+
+.intro-content .h1-aicee::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3b3b3b;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.intro-content .h1-aicee:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.intro-content .h1-hiro {
+    border-bottom: 2px solid #f8f8f8;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px;
+}
+
+.intro-content .h1-hiro::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.intro-content .h1-hiro:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 480px) {
+	.page-inner {
+    	padding: 4em 2em;
+	}
+}

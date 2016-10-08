@@ -110,6 +110,8 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 0.8em;
+	/**CEE-EDITS**/
+	padding-top: 3px;
 }
 
 .intro-content h1 > span:nth-child(2):before {
@@ -120,6 +122,8 @@ body {
 	height: 2px;
 	background: #f8f8f8;
 	content: '';
+	/**CEE-EDITS**/
+	display:none;
 }
 
 .side-right .intro-content h1 > span:nth-child(2):before {
