@@ -1,0 +1,69 @@
+.blur {
+	opacity: 0.8;
+}
+
+span.tooltip {
+	position: relative;
+	top: -3px;
+	font-size: 0.6em;
+	margin-left: 6px;
+}
+
+span.tooltip:after {
+	height: 30px;
+	left: -12px;
+	font-size: 50%;
+	top: -8px;
+	font-size: 75%;
+	position: relative;
+}
+
+span.tooltip:hover:before {
+	content: attr(data-content);
+	text-transform: none;
+	text-indent: 0;
+	letter-spacing: 0;
+	font-weight: 300;
+	padding: 0.4em 0.6em;
+	line-height: 1.2;
+	text-align: center;
+	left: auto;
+	margin-left: 4px;
+	position: absolute;
+	color: #333;
+	background: #fff;
+}
+
+.tooltip:after {
+	font-family: 'bpicons';
+	speak: none;
+	font-size: 0.3em;
+	font-style: normal;
+	font-weight: 200;
+	font-variant: normal;
+	text-transform: none;
+	text-align: center;
+	color: #4c9ed9;
+	-webkit-font-smoothing: antialiased;
+
+	content: "\e003";
+	margin-right: -10px;
+}
+
+
+.page-inner {
+	text-align: left;
+	padding: 
+}
+
+
+.page-inner > section > p a {
+	position: relative;
+  	text-decoration: none;
+	color: #4c9ed9;
+}
+
+.quote {
+	display: block;
+	margin-top: 6px; 
+}
