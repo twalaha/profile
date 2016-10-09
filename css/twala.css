@@ -7,6 +7,7 @@ span.tooltip {
 	top: -3px;
 	font-size: 0.6em;
 	margin-left: 6px;
+	z-index: 2;
 }
 
 span.tooltip:after {
@@ -32,6 +33,26 @@ span.tooltip:hover:before {
 	position: absolute;
 	color: #333;
 	background: #fff;
+
+	/**CEE EDITS**/
+	position: absolute;
+  	bottom: 150%;
+  	left: 50%;
+  	margin-bottom: 5px;
+  	margin-left: -80px;
+  	padding: 10px;
+  	padding: 0.4em 0.6em;
+  	width: 160px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  	background-color: #000;
+  	background-color: hsla(0, 0%, 20%, 0.9);
+  	background-color: rgba(0, 0, 0, 0.9);
+  	color: #fff;
+  	text-align: center;
+  	font-size: 16px;
+  	line-height: 1.2;
 }
 
 .tooltip:after {
@@ -50,6 +71,28 @@ span.tooltip:hover:before {
 	margin-right: -10px;
 }
 
+
+/**CEE EDITS**/
+span.tooltip.t-aicee:hover:before {
+	position: absolute;
+  	bottom: 150%;
+  	left: 50%;
+  	margin-bottom: 5px;
+  	margin-left: -80px;
+  	padding: 10px;
+  	padding: 0.4em 0.6em;
+  	width: 160px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  	background-color: #000;
+  	background-color: hsla(0, 0%, 20%, 0.9);
+  	background-color: rgba(255, 255, 255, 0.9);
+  	color: #000;
+  	text-align: center;
+  	font-size: 16px;
+  	line-height: 1.2;
+}
 
 .page-inner {
 	text-align: left;
@@ -143,4 +186,16 @@ span.tooltip:hover:before {
 	.page-inner {
     	padding: 4em 2em;
 	}
+}
+
+
+.intro-content:hover .profile img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.intro-content:hover .h1-aicee::before, .intro-content:hover .h1-hiro::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }

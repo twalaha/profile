@@ -87,6 +87,26 @@ a:hover {
 	position: absolute;
 	color: #333;
 	background: #fff;
+	width: 200px;
+
+	/**CEE EDITS**/
+	position: absolute;
+  	top: 150%;
+  	left: 50%;
+  	margin-bottom: 5px;
+  	margin-left: -80px;
+  	padding: 7px;
+  	padding: 0.8em 0.8em;
+ 	width: 160px;
+ 	-webkit-border-radius: 3px;
+ 	-moz-border-radius: 3px;
+ 	border-radius: 3px;
+ 	background-color: #000;
+  	background-color: rgba(255,255,255,0.8);
+  	color: #000;
+  	text-align: center;
+  	font-size: 16px;
+  	line-height: 1.2;
 }
 
 .codropsheader nav {
@@ -203,10 +223,28 @@ a:hover {
 		padding: 0;
 	}
 	.codropsheader > span span:after {
-		display: none;
+		/*display: none;*/
 	}
 }
 
 @media screen and (max-height: 30.25em) {
 	.codropsheader nav { display: none; }
+}
+
+/**CEE EDITS**/
+@media screen and (max-width: 480px) {
+.codropsheader > span span:hover:before {
+  	padding: 0.3em 0.3em;
+ 	width: 140px;
+  	text-align: center;
+  	font-size: 14px;
+  	line-height: 1.2;
+  	margin-left: -70px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+	.codropsheader > span span:hover:before {
+  		left: 10%;
+	}
 }
