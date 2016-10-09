@@ -113,15 +113,15 @@ span.tooltip.t-aicee:hover:before {
 
 /**CEE-EDITS**/
 .profile img {
-    -webkit-filter: grayscale(0);
-	filter: grayscale(0);
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
-.profile img:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+.profile img:hover {    
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 .intro-content .h1-aicee {
@@ -190,8 +190,8 @@ span.tooltip.t-aicee:hover:before {
 
 
 .intro-content:hover .profile img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 .intro-content:hover .h1-aicee::before, .intro-content:hover .h1-hiro::before {
